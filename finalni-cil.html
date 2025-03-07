@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finální úkol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧩 Finální úkol: Křížovka a početní hádanka!</h1>
+        <p>Vyřeš následující hádanky a získej tajný kód.</p>
+
+        <!-- Křížovka -->
+        <table class="crossword">
+            <tr>
+                <td>První písmeno</td> <td>Čtvrté písmeno</td> <td>Třetí písmeno</td>
+            </tr>
+            <tr>
+                <td class="clue">
+                    <p>V pradávné říši železa a skla,<br>
+                    mocný muž si svůj osud spřádal,<br>
+                    bohatství rostlo, svět mu tleskal,<br>
+                    leč jeho stín už se hrůzou zmítal.</p>
+                    
+                    <p>Stvořil kov, co se vzepřel pánům,<br>
+                    chamtivost s moudrostí boj sváděla,<br>
+                    až Země šeptem v smutných ránům<br>
+                    zkázou svou píseň dopsala.</p>
+                    
+                    <p>Kdo ve své pýše zpečetil věk?<br>
+                    Kdo jméno v troskách historie má?<br>
+                    Kdo byl tím králem, jenž zůstal sám,<br>
+                    ve věži, kde ticho vládne dál?</p>
+                </td>
+                <td class="clue">
+                    <p>V temné síni pod stíny věží,<br>
+                    kde struny osudu napjaté jsou,<br>
+                    princezna padlá v osudu běží,<br>
+                    svou píseň zpívá v bázni svou.</p>
+                    
+                    <p>Hmyzím královstvím ostrý hrot klouže,<br>
+                    v pavoučí síti se tajemství skrývá,<br>
+                    hluboko v hlubinách čekají růže,<br>
+                    kde světlo i stín svůj souboj mívá.</p>
+                    
+                    <p>Kdo nosí jehlu, kdo trny své kříží?<br>
+                    Kdo v srdci má plamen a boj svůj zná?<br>
+                    Kdo písní svou v prázdnotě dýší,<br>
+                    než do království opět se dá?</p>
+                </td>
+                <td class="clue">
+                    <p>Pod písky času, v říši kostí,<br>
+                    bojovník kráčí, hrdě se směje.<br>
+                    Slova mu vtipem navždy hoří,<br>
+                    přesto své srdce v skrytu taje.</p>
+                    
+                    <p>Bratr svůj osud rukou řídí,<br>
+                    kosti se lámou, ale duch ne.<br>
+                    I když tě chytne v pasti klidu,<br>
+                    naděje vtipem opět vzplane.</p>
+                    
+                    <p>Kdo se smíchem své kroky měří?<br>
+                    Kdo sní o slávě v písku snů?<br>
+                    Kdo, ač je koster králem nyní,<br>
+                    svůj bratrský smích dává v dnů?</p>
+                </td>
+            </tr>
+        </table>
+
+        <h2>➕ Početní úloha:</h2>
+        <p>Kolik je <strong>(25 x 2) - 13</strong> ?</p>
+
+        <!-- Formulář pro odpověď -->
+        <form id="finalForm">
+            <label for="answer">Zadej odpověď:</label>
+            <input type="text" id="answer" name="answer" placeholder="Napiš odpověď" required>
+            <button type="submit">Ověřit</button>
+        </form>
+
+        <p id="feedbackMessage" class="error"></p>
+    </div>
+
+    <script src="finalni-script.js"></script>
+</body>
+</html>

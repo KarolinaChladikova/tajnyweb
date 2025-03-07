@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Šifrovaná hádanka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Šifra!</h1>
+        <p>
+            vým úkolem je ji rozluštit a zadat správnou odpověď.
+        </p>
+        
+        <h2>🗝️ Klíč k šifře:</h2>
+        <p>
+            <strong>O R I G A N U M</strong><br>
+                    1 2 3 4 5 6 7 8
+        </p>
+
+        <h2>🕵️‍♂️ Zašifrovaný text:</h2>
+        <p><strong>V561C63 ST218EČEK</strong></p>
+
+        <!-- Formulář pro odpověď -->
+        <form id="cipherForm">
+            <label for="answer">Zadej odpověď:</label>
+            <input type="text" id="answer" name="answer" placeholder="Napiš odpověď" required>
+            <button type="submit">Ověřit</button>
+        </form>
+
+        <p id="feedbackMessage" class="error"></p>
+    </div>
+
+    <script src="cipher-script.js"></script>
+</body>
+</html>

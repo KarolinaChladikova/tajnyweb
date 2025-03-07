@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Černé pozadí */
+    color: #fff; /* Bílý text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto; /* Povolit vertikální scrolling */
+}
+
+.container {
+    max-width: 90%;
+    padding: 20px;
+    overflow: auto; /* Povolit posouvání, pokud je obsah větší než viewport */
+}
+
+.crossword {
+    width: 100%; /* Přizpůsobení tabulky šířce obrazovky */
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+.crossword td {
+    word-wrap: break-word; /* Zajistí, že text se zalomí a nebude rozšiřovat buňky */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+    .crossword td {
+        display: block; /* Na mobilních zařízeních umístí hádanky pod sebe */
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.riddle {
+    font-style: italic;
+    font-size: 16px;
+    color: #ffcc00; /* Zlatá barva pro zvýraznění hádanky */
+    margin-bottom: 20px;
+}
+
+.morse {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ff00; /* Zelená barva pro kód */
+}
+
+/* Zarovnání inputu a tlačítka na stejnou šířku */
+input, button {
+    width: 100%; /* Oba prvky budou mít stejnou šířku */
+    max-width: 300px; /* Přidáme maximální šířku pro lepší vzhled */
+    display: block; /* Každý prvek na nový řádek */
+    margin: 10px auto; /* Zarovnání na střed */
+    text-align: center;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    background: #ff9900; /* Oranžové tlačítko */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff6600;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.sudoku {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 270px;
+    height: 270px;
+}
+
+.sudoku td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
+.sudoku td:nth-child(3n) {
+    border-right: 2px solid white;
+}
+
+.sudoku tr:nth-child(3n) td {
+    border-bottom: 2px solid white;
+}
+
+.highlight {
+    background-color: #ffcc00;
+    font-weight: bold;
+}
