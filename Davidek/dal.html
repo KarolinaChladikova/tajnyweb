@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Další úroveň</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Další hádanka!</h1>
+        <p>
+            Jsem bílá strážkyně, která kdysi zachránila Řím.  
+            Nejsem dravec, ale lidé mě spojují s varováním před nebezpečím.  
+            Na podzim odcházím, ale na jaře se vracím domů.  
+            Lidé si mě spojují s pečínkou na svatého Martina.  
+        </p>
+
+        <!-- Formulář pro odpověď -->
+        <form id="answerForm">
+            <label for="answer">Kdo jsem:</label>
+            <input type="text" id="answer" name="answer" placeholder="Napiš odpověď" required>
+            <button type="submit">Pokračovat</button>
+        </form>
+
+        <p id="feedbackMessage" class="error"></p>
+    </div>
+
+    <script src="dalsi-script.js"></script>
+</body>
+</html>
