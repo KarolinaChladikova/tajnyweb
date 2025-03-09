@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .toLowerCase();
       let feedbackMessage = document.getElementById("feedbackMessage");
 
-      if (userAnswer === "sušák na prádlo na zahradě") {
-        feedbackMessage.textContent = "✅ Správně! Přesměrování...";
+      if (userAnswer === "fiskus ti neco schoval ve svem kralovstvi") {
+        feedbackMessage.textContent = "✅ Správně!";
         feedbackMessage.classList.remove("error");
         feedbackMessage.classList.add("success");
 
