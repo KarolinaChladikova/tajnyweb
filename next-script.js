@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let feedbackMessage = document.getElementById("feedbackMessage");
 
       if (userAnswer === "fiskus ti neco schoval ve svem kralovstvi") {
-        feedbackMessage.textContent = "✅ Správně!";
+        feedbackMessage.textContent = "✅ Správně!!";
         feedbackMessage.classList.remove("error");
         feedbackMessage.classList.add("success");
 

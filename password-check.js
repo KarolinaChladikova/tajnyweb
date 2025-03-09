@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (userPassword === "velka francouzska revoluce") {
         // Správné heslo
-        feedbackMessage.textContent = "✅ Správně!";
+        feedbackMessage.textContent = "✅ Správně!!";
         feedbackMessage.classList.remove("error");
         feedbackMessage.classList.add("success");
 

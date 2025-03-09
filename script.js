@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let errorMessage = document.getElementById("errorMessage");
 
       if (passwordInput.toLowerCase() === "funkce") {
-        alert("Správně! Vítej na dobrodružné cestě. 🎉");
+        alert("Správně! Vítej na dobrodružné cestě! 🎉");
         window.location.href = "next.html"; // Přesměrování na další stránku
       } else {
         errorMessage.textContent = "❌ Špatné heslo! Zkus to znovu.";
