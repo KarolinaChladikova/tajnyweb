@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .toLowerCase();
       let feedbackMessage = document.getElementById("feedbackMessage");
 
-      if (userPassword === "velká francouzská revoluce") {
+      if (userPassword === "velka francouzska revoluce") {
         // Správné heslo
         feedbackMessage.textContent = "✅ Správně!";
         feedbackMessage.classList.remove("error");
