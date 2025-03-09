@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .toLowerCase();
       let feedbackMessage = document.getElementById("feedbackMessage");
 
-      if (userAnswer === "vánoční stromeček") {
+      if (userAnswer === "vanocni stromecek") {
         // Správná odpověď
-        feedbackMessage.textContent = "✅ Správně! Přesměrování...";
+        feedbackMessage.textContent = "✅ Správně!";
         feedbackMessage.classList.remove("error");
         feedbackMessage.classList.add("success");
 
